@@ -2,5 +2,8 @@
   "private": "true",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@rxd-ui/tokens": "^1.0.0"
+  }
 }
