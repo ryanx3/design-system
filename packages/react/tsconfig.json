@@ -1,0 +1,4 @@
+{
+  "extends": "@rxd-ui/ts-config/react.json",
+  "include": ["src"]
+}
