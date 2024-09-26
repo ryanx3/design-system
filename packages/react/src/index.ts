@@ -1,1 +1,3 @@
-import { colors } from "@rxd-ui/tokens"
+import { colors } from "@rxd-ui/tokens";
+
+console.log(colors)
