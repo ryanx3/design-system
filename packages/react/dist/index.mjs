@@ -13,8 +13,15 @@ var colors = {
   rxd300: "#00B37E",
   rxd500: "#00875F",
   rxd700: "#015F43",
-  rxd900: "#00291D"
+  rxd900: "#00291D",
 };
 
-// src/index.ts
-console.log(colors);
+// src/index.tsx
+import { jsx } from "react/jsx-runtime";
+function App() {
+  return /* @__PURE__ */ jsx("h1", {
+    style: { color: colors.rxd300 },
+    children: "Hello World",
+  });
+}
+export { App };
