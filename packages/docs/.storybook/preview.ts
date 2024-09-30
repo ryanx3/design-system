@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-import { themes } from "@storybook/theming"
+import { themes } from "@storybook/theming";
 
 
 const preview: Preview = {
@@ -14,7 +14,8 @@ const preview: Preview = {
       },
     },
     docs: {
-      theme: themes.dark
+      theme: themes.dark,
+      tags: ['autodocs'],
     }
   },
 };
