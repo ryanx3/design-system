@@ -1,11 +1,15 @@
 import type { StoryObj, Meta } from "@storybook/react";
-import { Box, BoxProps } from "@rxd-ui/react";
+import { Box, BoxProps, Text } from "@rxd-ui/react";
 
 export default {
   title: "Surfaces/Box",
   component: Box,
   args: {
-    children: <></>,
+    children: (
+      <Text>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dolor
+      </Text>
+    ),
   },
 } as Meta<BoxProps>;
 
