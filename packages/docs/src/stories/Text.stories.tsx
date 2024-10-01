@@ -4,6 +4,7 @@ import { Text, TextProps } from "@rxd-ui/react";
 export default {
   title: "Typography/Text",
   component: Text,
+  tags: ["autodocs"],
   args: {
     children:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi vel est numquam, fugit unde molestiae laboriosam et. Porro, minima. Ex quae quisquam corrupti! Aperiam ab dolor laboriosam voluptas eos laborum.",
