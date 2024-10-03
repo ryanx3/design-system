@@ -7,6 +7,24 @@ export default {
   tags: ["autodocs"],
   args: {
     children: "Custom title",
+    size: "lg"
+  },
+  argTypes: {
+    size: {
+      options: [
+        "sm",
+        "md",
+        "lg",
+        "xl",
+        "4xl",
+        "5xl",
+        "6xl",
+        "7xl",
+        "8xl",
+        "9xl",
+      ],
+      control: { type: "inline-radio" },
+    },
   },
 } as Meta<HeadingProps>;
 
