@@ -5,13 +5,15 @@ import { ComponentProps } from "react";
 export interface AvatarProps extends ComponentProps<typeof AvatarImage> {}
 
 export function Avatar(props: AvatarProps) {
-  return(
+  return (
     <AvatarContainer>
-      <AvatarImage {...props}/>
+      <AvatarImage {...props} />
 
       <AvatarFallback delayMs={600}>
-        <User/>
+        <User />
       </AvatarFallback>
     </AvatarContainer>
-  )
+  );
 }
+
+Avatar.displayName = "Avatar";

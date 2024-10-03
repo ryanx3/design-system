@@ -1,13 +1,8 @@
 import { ComponentProps, ElementType } from "react";
 import { styled } from "../styles";
 
-export interface ButtonProps extends ComponentProps<typeof Button> {
-  as?: ElementType;
-}
-
 export const Button = styled("button", {
-  all: "unset", // Tira todas as propriedades padrões do botão
-
+  all: "unset",
   borderRadius: "$sm",
   fontSize: "$sm",
   fontWeight: "$medium",
@@ -86,3 +81,9 @@ export const Button = styled("button", {
     size: "md",
   },
 });
+
+export interface ButtonProps extends ComponentProps<typeof Button> {
+  as?: ElementType;
+}
+
+Button.displayName = "Button";
