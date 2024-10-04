@@ -14,7 +14,12 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
+
       - run: npm run build
+        env: 
+        TURBO_TOKEN: PNgmJmPJyZfRxUWzTn5M6gGo
+        TURBO_TEAM: ryanx3s-projects
+
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: touch storybook-static/.nojekyll && npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
