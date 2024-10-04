@@ -15,4 +15,6 @@ export const colors = {
   rxd500: '#00875F',
   rxd700: '#015F43',
   rxd900: '#00291D',
+
+  test: "#fff"
 }
