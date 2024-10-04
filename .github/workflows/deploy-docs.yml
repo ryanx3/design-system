@@ -9,19 +9,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
-        cache: 'npm'
+          cache: 'npm'
           cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
 
       - run: npm run build
         env: 
-        TURBO_TOKEN: PNgmJmPJyZfRxUWzTn5M6gGo
-        TURBO_TEAM: ryanx3s-projects
+          TURBO_TOKEN: PNgmJmPJyZfRxUWzTn5M6gGo
+          TURBO_TEAM: ryanx3s-projects
 
       - name: Deploy storybook
         working-directory: ./packages/docs
