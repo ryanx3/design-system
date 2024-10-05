@@ -7,7 +7,7 @@ export default {
   tags: ["autodocs"],
   args: {
     children: (
-      <Text css={{ color: "$gray100", fontWeight: "bold" }} size={"sm"}>
+      <Text css={{ fontFamily: "$inter" }} size={"sm"}>
         28 June - Available
       </Text>
     ),
@@ -18,7 +18,7 @@ export const Primary: StoryObj<TooltipProps> = {};
 export const Unavalaible: StoryObj<TooltipProps> = {
   args: {
     children: (
-      <Text css={{ color: "$gray100", fontWeight: "bold" }} size={"sm"}>
+      <Text css={{ fontFamily: "$inter" }} size={"sm"}>
         21 October - Unavalaible
       </Text>
     ),

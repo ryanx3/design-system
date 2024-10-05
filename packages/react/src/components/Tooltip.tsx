@@ -9,8 +9,9 @@ export const Tooltip = styled("div", {
   textAlign: "center",
   width: "max-content",
   position: "relative",
-
+  fontWeight: "$medium",
   transition: "opacity 0.2s ease-in-out",
+  lineHeight: 0,
 
   "&:hover": {
     opacity: 1,
