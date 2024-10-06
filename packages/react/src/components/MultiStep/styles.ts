@@ -15,10 +15,10 @@ export const Label = styled(Text, {
 
 export const Steps = styled("div", {
   display: "grid",
-  gridTemplateColumns:"repeat(var(--steps-size), 1fr)",
-  gap:"$2",
+  gridTemplateColumns: "repeat(var(--steps-size), 1fr)",
+  gap: "$2",
   marginTop: "$1"
-})
+});
 
 export const Step = styled('div', {
   height: '$1',
