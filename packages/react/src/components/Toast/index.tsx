@@ -4,20 +4,17 @@ import { X } from "phosphor-react";
 
 export interface ToastProps extends ComponentProps<typeof ToastContainer> {
   children: string;
-  title: ReactNode;
+  title: string;
 }
 
-export function Toast({ title }: ToastProps) {
+export function Toast({ title, children }: ToastProps) {
   return (
     <ToastContainer>
       <div>
-      <Title>{title}</Title>
-      <Schedule>
-        
-      </Schedule>
+        <Title>{title}</Title>
+        {children}
       </div>
-
-      <X weight="bold" />
+      <X weight="bold" size={20}/>
     </ToastContainer>
   );
 }
